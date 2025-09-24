@@ -20,7 +20,7 @@ CHIP DMux4Way {
     And(a=aSel, b=in, out=a);
     And(a=notSel0, b=sel[1], out=bSel);
     And(a=bSel, b=in, out=b);
-    And(a=sel[0], b=sel[1], out=cSel);
+    And(a=sel[0], b=notSel1, out=cSel);
     And(a=cSel, b=in, out=c);
     And(a=sel[0], b=sel[1], out=dSel);
     And(a=dSel, b=in, out=d);
